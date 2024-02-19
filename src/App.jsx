@@ -13,13 +13,13 @@ function App() {
         <div>
           <ul className="nav-links">
             <li>
-              <a href="">HOME</a>
+              <a href="/">HOME</a>
             </li>
             <li>
-              <a href="#">BOOKINGS</a>
+              <a href="/">BOOKINGS</a>
             </li>
             <li>
-              <a href="#">CONTACT</a>{" "}
+              <a href="/">CONTACT</a>{" "}
             </li>
           </ul>
         </div>
