@@ -1,30 +1,22 @@
-import * as React from "react";
-import "./App.css";
+import React, { useState, useEffect } from "react";
+import Navbar from "./Components/Navbar/Navbar.jsx"; // Adjust the import path as necessary
 import Hero from "./Components/HERO/Hero.jsx";
-import logo from "./Wiggle_logo.png";
+import "./App.css"; // Assuming your global styles are here
 
 function App() {
+  const [variant, setVariant] = useState("A"); // Default to 'A' to ensure initial render has a defined state
+
+  useEffect(() => {
+    // Randomly select a variant on component mount
+    const selectedVariant = Math.random() < 0.5 ? "A" : "B";
+    setVariant(selectedVariant);
+  }, []);
+
   return (
     <>
-      <div className="navbar">
-        <div>
-          <img src={logo} alt="logo" />
-        </div>
-        <div>
-          <ul className="nav-links">
-            <li>
-              <a href="/">HOME</a>
-            </li>
-            <li>
-              <a href="/">BOOKINGS</a>
-            </li>
-            <li>
-              <a href="/">CONTACT</a>{" "}
-            </li>
-          </ul>
-        </div>
-      </div>
-      <Hero />
+      <Navbar variant={variant} />
+      <Hero variant={variant} />
+      {/* Insert other components that might need the variant */}
     </>
   );
 }

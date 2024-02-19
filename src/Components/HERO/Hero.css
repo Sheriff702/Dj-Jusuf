@@ -85,7 +85,7 @@ span {
   z-index: -1;
   transition: 0.5s;
 }
-button {
+.button-base {
   width: 200px;
   padding: 15px 0;
   text-align: center;
@@ -100,11 +100,35 @@ button {
   overflow: hidden;
 }
 
-button:hover span {
+.button-base:hover span {
   width: 100%;
 }
 
-button:hover {
+.button-base:hover {
   border: none;
   color: #000000;
+}
+
+/* Styles for Variant A */
+.button-variant-a {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for Variant B */
+.button-variant-b {
+  color: #ffffff;
+}
+
+.button-variant-a:hover span {
+  width: 100%;
+}
+.button-variant-b:hover span {
+  transition: 0.5s;
+  width: 100%;
+}
+.button-variant-b:hover {
+  /* Hover styles for variant B */
+  transition: 0.5s;
+  background-color: rgb(59, 249, 59);
 }
