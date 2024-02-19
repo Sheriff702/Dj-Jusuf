@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./Wiggle_logo.png"; // Ensure the path to your logo is correct
-import "./Navbar.css"; // Ensure you have a CSS file for Navbar styles
+import logo from "./Wiggle_logo.png";
+import "./Navbar.css";
 
 function Navbar({ variant }) {
   const style =

@@ -1,15 +1,14 @@
-// Hero.jsx
 import React from "react";
 import "./Hero.css";
 
 function Hero({ variant }) {
-  // Determine the button text based on the variant A or B
+  // Bestäm knappens text baserat på varianten A eller B
   const buttonText =
     variant === "A" ? "Press here for some music" : "Discover new beats";
   const buttonVariantClass =
     variant === "A" ? "button-variant-a" : "button-variant-b";
 
-  // Function to handle button clicks
+  // Funktion för att hantera knapptryckningar
   const handleButtonClick = () => {
     console.log(`Button clicked: ${buttonText}`);
   };
@@ -34,7 +33,7 @@ function Hero({ variant }) {
             onClick={handleButtonClick}
             className={`button-base ${buttonVariantClass}`}
           >
-            <span></span> {/* This span is for the hover effect */}
+            <span></span>
             {buttonText}
           </button>
         </div>

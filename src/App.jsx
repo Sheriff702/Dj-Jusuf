@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./Components/Navbar/Navbar.jsx"; // Adjust the import path as necessary
+import Navbar from "./Components/Navbar/Navbar.jsx";
 import Hero from "./Components/HERO/Hero.jsx";
-import "./App.css"; // Assuming your global styles are here
+import "./App.css";
 
 function App() {
-  const [variant, setVariant] = useState("A"); // Default to 'A' to ensure initial render has a defined state
+  const [variant, setVariant] = useState("A"); // Standardinställning till 'A' för att säkerställa att den initiala renderingen har ett definierat tillstånd
 
   useEffect(() => {
-    // Randomly select a variant on component mount
+    // Slumpmässigt välj en variant vid komponentens montering
     const selectedVariant = Math.random() < 0.5 ? "A" : "B";
     setVariant(selectedVariant);
   }, []);
@@ -16,7 +16,6 @@ function App() {
     <>
       <Navbar variant={variant} />
       <Hero variant={variant} />
-      {/* Insert other components that might need the variant */}
     </>
   );
 }

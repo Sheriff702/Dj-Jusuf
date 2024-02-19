@@ -109,13 +109,13 @@ span {
   color: #000000;
 }
 
-/* Styles for Variant A */
+/* Styling för Variant A */
 .button-variant-a {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Styles for Variant B */
+/* Styling för Variant B */
 .button-variant-b {
   color: #ffffff;
 }
@@ -128,7 +128,7 @@ span {
   width: 100%;
 }
 .button-variant-b:hover {
-  /* Hover styles for variant B */
+  /* Hover styling för variant B */
   transition: 0.5s;
   background-color: rgb(59, 249, 59);
 }
