@@ -12,10 +12,10 @@ function Hero({ variant }) {
   const handleButtonClick = () => {
     console.log(`Button clicked: ${buttonText}`);
   };
-
+  const svgVariantClass = variant === "A" ? "svg-variant-a" : "svg-variant-b";
   return (
     <div className="content">
-      <svg className="front" viewBox="0 0 3200 300">
+      <svg className={`front ${svgVariantClass}`} viewBox="0 0 3200 300">
         <text x="50%" y="50%" dy=".35em" textAnchor="middle">
           Welcome to DJ JUSUFS WEBSITE
         </text>
